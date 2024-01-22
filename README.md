@@ -1,4 +1,6 @@
-# flutter_card_swiper
+# flutter_card_swiper(_tabula)
+
+## ATTENTION: It's a custom version of the [flutter_card_swiper](https://github.com/ricardodalarme/flutter_card_swiper) package to fit the needs of our app [tabula](https://github.com/kprueger/tabula)
 
 [![Pub Version](https://img.shields.io/pub/v/flutter_card_swiper?logo=dart&logoColor=white)](https://pub.dev/packages/flutter_card_swiper)
 [![Pub Points](https://badgen.net/pub/points/flutter_card_swiper)](https://pub.dev/packages/flutter_card_swiper)
