@@ -394,7 +394,7 @@ class _CardSwiperState<T extends Widget> extends State<CardSwiper>
     _directionHistory.add(_detectedDirection);
 
     if (isLastCard) {
-      widget.onEnd?.call();
+      widget.onEnd?.call(_detectedDirection);
     }
   }
 

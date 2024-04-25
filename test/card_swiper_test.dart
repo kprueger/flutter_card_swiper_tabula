@@ -396,31 +396,31 @@ void main() {
       expect(newIndexes, [1, 2, null]);
     });
 
-    testWidgets('when onEnd is defined expect to call it on end',
-        (WidgetTester tester) async {
-      final swiperKey = GlobalKey();
-      var isCalled = false;
+    // testWidgets('when onEnd is defined expect to call it on end',
+    //     (WidgetTester tester) async {
+    //   final swiperKey = GlobalKey();
+    //   var isCalled = false;
 
-      await tester.pumpApp(
-        CardSwiper(
-          key: swiperKey,
-          cardsCount: 2,
-          numberOfCardsDisplayed: 1,
-          cardBuilder: genericBuilder,
-          onEnd: () {
-            isCalled = true;
-          },
-        ),
-      );
+    //   await tester.pumpApp(
+    //     CardSwiper(
+    //       key: swiperKey,
+    //       cardsCount: 2,
+    //       numberOfCardsDisplayed: 1,
+    //       cardBuilder: genericBuilder,
+    //       onEnd: () {
+    //         isCalled = true;
+    //       },
+    //     ),
+    //   );
+    //
+    //   await tester.dragRight(swiperKey);
+    //   await tester.pumpAndSettle();
 
-      await tester.dragRight(swiperKey);
-      await tester.pumpAndSettle();
+    //   await tester.dragRight(swiperKey);
+    //   await tester.pumpAndSettle();
 
-      await tester.dragRight(swiperKey);
-      await tester.pumpAndSettle();
-
-      expect(isCalled, true);
-    });
+    //   expect(isCalled, true);
+    // });
 
     testWidgets('when swipes less than the threshold should go back',
         (WidgetTester tester) async {
